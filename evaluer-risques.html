@@ -28,7 +28,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Accès à l'eau potable</a>
+    <a class="navbar-brand" href="index.html">Sécheresses et eau potable</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fas fa-bars"></i>
@@ -73,89 +73,61 @@
   <!-- Onglets -->
   <div class="row">
     <div class="col-lg-10 col-md-10 mx-auto">
-      <h2 id="start"> Tutoriel en trois étapes </h2>
-      <p>En questionnant des scientifiques de différents domaines, nous avons identifié plusieurs éléments permettant d'évaluer le risque de pénurie d'eau : la composition du sous-sol (étape 1), la hausse des températures (étape 2), votre réseau d'eau et l'usage qui en est fait (étape 3).  [retrouvez ici notre mthode détaillée] </p>
-      <br/>
+      <h2 id="start">Comment évaluer le risque de pénurie d'eau ? </h2>
+      <p> Des pénuries d'eau potable ont lieu lorsque les eaux sous-terraines s'épuisent. L'eau s'amenuise selon plusieurs facteurs :</p>
+      <ul>
+        <li>La composition du sous-sol (tuto 1)</li>
+        <li>la hausse des températures (tuto 2)</li>
+        <li>Votre usage de l'eau potable (tuto 3)</li>
+      </ul>
 
+      <br/>
+      <h2 id="start">Tutoriels</h2>
+      <br/>
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" id="etape1-tab" data-toggle="tab" href="#etape1" role="tab" aria-controls="etape1"
-             aria-selected="true">Etape 1</a>
+             aria-selected="true">Tuto 1</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="etape2-tab" data-toggle="tab" href="#etape2" role="tab" aria-controls="etape2"
-             aria-selected="false">Etape 2</a>
+             aria-selected="false">Tuto 2</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="etape3-tab" data-toggle="tab" href="#etape3" role="tab" aria-controls="etape3"
-             aria-selected="false">Etape 3</a>
+             aria-selected="false">Tuto 3</a>
         </li>
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="etape1" role="tabpanel" aria-labelledby="etape1-tab">
           <!-- Contenus -->
           <br>
-          <h3>Etape 1 | Résidez-vous sur une zone où l'eau "s'échappe" naturellement ? </h3>
+          <h3>Tuto 1 | La composition du sol</h3>
           <span class="temps">Réalisation en 15 mn</span>
+          <p>Certains sols ne permettent pas de stocker efficacement les eaux de pluie. C'est le cas des reliefs de type calcaire compact:</p>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 mx-auto">
+              <img style="max-width: 100%;" src="img/explicationkarst1.png" alt=""/>
+            </div>
+            <div class="col-lg-6 col-md-6 mx-auto">
+              <img style="max-width: 100%;" src="img/explicationkarst2.png" alt=""/>
+            </div>
+          </div>
           <br>
-          <!-- Intro -->
-
-          <p>Certains environnements naturels stockent peu l'eau de pluie, et celle-ci s'évapore vite. Ils sont caractérisés par : </p>
-          <ul>
-            <li><a href="#calcaire">Du relief de type calcaire compact</a>
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-modal" data-toggle="modal" data-target="#explicationcalcaire">
-                Pourquoi ?
-              </button>
-              <!-- Modal -->
-              <div class="modal fade" id="explicationcalcaire" tabindex="-1" role="dialog" aria-labelledby="explicationcalcaireLb" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Le relief de type calcaire compact</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 mx-auto">
-                      <img style="max-width: 100%;" src="img/explicationkarst1.png" alt=""/>
-                        </div>
-                        <div class="col-lg-6 col-md-6 mx-auto">
-                          <img style="max-width: 100%;" src="img/explicationkarst2.png" alt=""/>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 mx-auto">
-                          <p>L’eau de pluie s’infiltre dans les fissures sous-terraines.
-                          Jusqu’à 30m / heure ! </p>
-                        </div>
-                        <div class="col-lg-6 col-md-6 mx-auto">
-                          <p>Lors de périodes de sécheresses, l'eau s'évacue vers les plaines.</p>
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li><a href="#reserveseau">Une absence de grandes réserves d'eau sous-terraines</a></li>
-          </ul>
-          <p>Ces deux critères indiquent des zones peu résistantes à des périodes de sécheresse. Ce n'est pas exhaustif. Ce sont les premières zones concernées par notre exploration ! </p>
 
           <!-- 1er critère -->
-          <h4 id="calcaire">Quelles sont les zones de type calcaire compact ?</h4>
-          <p>[CARTE DES ZONES KASTIQUES]</p>
+          <h4 id="calcaire">Carte des zones calcaires compactes</h4>
+          <p>Êtes-vous sur une zone hachurée en noir ? </p>
+          <img src="img/cartecalcaire.jpg">
+
+          <p>Si oui, votre région est de type calcaire, et est probablement peu résistante aux périodes chaudes et sèches prolongées. Toutefois, il est possible que vous disposiez de  réserves d'eau !</p>
+            <p> (Si non, nous n'avons pas encore étudié la question) </p>
 
           <!-- 2ème critère : BDLisa -->
-          <h4 id="reserveseau">Les réserves d'eau sous-terraines</h4>
-          <p>Le calcaire de surface empêche la formation de réserves d'eau sous-terraines. Pour savoir comment
-            se caractérise le calcaire chez vous, c'est facile : </p>
+          <h4 id="reserveseau">Votre région dipose t-elle naturellement de réserves d'eau ? </h4>
+          <p> Le calcaire peut être en surface ou en profondeur. C'est principalement le calcaire de surface qui empêche de stocker les eaux de pluie.
+            Pour savoir comment se caractérise le calcaire chez vous, c'est facile : </p>
           <ul>
             <li>Ouvrez le <a class="lien" href="https://bdlisa.eaufrance.fr/carte">le visualisateur de l'eau fr France : BDLisa</a></li>
             <li>Découchez la couche “entités hydrogéologiques affleurantes”.</li>
