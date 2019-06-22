@@ -28,12 +28,12 @@
 
 header.masthead .site-heading {
   h1{
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .subheading{
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 26px;
+    font-weight: 700;
     line-height: 1.5em;
     color: white;
   }
@@ -144,4 +144,18 @@ body {
 .temps {
   font-size: 18px;
   color : $gray-600;
+}
+
+.cartes{
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+  border-color: lightgray;
+}
+
+.card-header{
+  border-bottom-color: white;
+background-color: white;
 }
