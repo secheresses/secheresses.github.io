@@ -7,6 +7,7 @@
   text-transform: uppercase;
   border-radius: 0;
   @include sans-serif-font;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -18,6 +19,7 @@
     color: $white;
     background-color: darken($primary, 7.5) !important;
     border-color: darken($primary, 7.5) !important;
+    text-decoration: none;
   }
 }
 
@@ -159,3 +161,10 @@ body {
   border-bottom-color: white;
 background-color: white;
 }
+
+a .lien {
+  text-decoration: underline;
+}
+
+
+
