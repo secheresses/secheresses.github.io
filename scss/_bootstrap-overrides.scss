@@ -124,7 +124,7 @@ body {
 .meta {
   background-color : #00657b;
   color: white;
-  padding: 3px;
+  padding: 5px;
 }
 
 .btn-modal {
@@ -165,6 +165,25 @@ background-color: white;
 a .lien {
   text-decoration: underline;
 }
+
+
+ul .zones-btn {
+
+
+  border-bottom: none;
+
+}
+
+li .zones-btn
+{
+  background-color: #ffffff;
+  margin: 10px;
+  border : none;
+  border-bottom: black;
+  color: #4e555b;
+}
+
+
 
 
 
