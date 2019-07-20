@@ -25,6 +25,8 @@
 
 <body>
 
+
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
@@ -36,20 +38,37 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" >Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="evaluer-risques.html">Evaluer les risques</a>
+            <a class="nav-link" >Témoignages</a>
           </li>
+          <li class="btn-group nav-item">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Ressources<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Zone à risque 1: Votre région est-elle à relief calcaire? </a></li>
+              <li><a href="#">Zone à risque 2: Votre région est-elle sur une roche socle ? </a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Tuto : Connaître l'intensité du risque selon les saisons en 2030, 2050, 2080</a></li>
+              <li><a href="#">Tuto : Où est puisée l'eau potable et qui contacter pour en savoir plus ? </a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Liste des données scientifiques</a></li>
+
+            </ul>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="qui-sommes-nous.html">Qui sommes-nous ? </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="methode.html">Méthode d'investigation </a>
-          </li>
         </ul>
       </div>
+
+
+
     </div>
+
   </nav>
 
   <!-- Page Header -->
@@ -64,8 +83,8 @@
             <hr class="my-4">
             <span><img class="quote" src="vendor/fontawesome-free/svgs/solid/quote-left.svg" alt="citation"></span>
             <span class="meta" >Nous sommes un collectif de citoyens soucieux des impacts du changement climatique. Nous sommes allés à la rencontre de personnes vivant actuellement des problèmes d'accès à l'eau potable <a style="color: white;" class="lien" href="evaluer-risques.html" ><strong>(consultez leurs témoignages)</strong></a> et nous avons décidé d’essayer d’anticiper avec eux, sur la base de données scientifiques, l’évolution des risques sur leur zone. Nous tentons de valoriser et rendre accessibles les données produites par des organismes de référence, utiles à tous pour anticiper l'avenir et assumer notre responsabilité collective.  </span>
-            <p class="arrowdown"><img src="vendor/fontawesome-free/svgs/solid/arrow-down.svg" alt="veuillez continuer la lecture dans la page."></p>
-
+            <p class="center">J'anticipe !</p>
+            <p class="arrowdown"><a href="#start"><img src="vendor/fontawesome-free/svgs/solid/arrow-down.svg" alt="veuillez continuer la lecture dans la page."></a></p>
             <!-- Call to action
         <hr class="my-4">
 
@@ -80,7 +99,7 @@
   <div class="container">
 
     <div class="tab-content col-lg-8 col-md-8 ">
-        <h2>Une année classique en ...</h2>
+        <h2 id="start">Où doit t-on anticiper le partage de l'eau potable?</h2>
     </div>
     </br>
 
@@ -132,28 +151,29 @@
           </ul>
         </div>-->
 
-        <p><strong>Risque de manquer d'eau potable plusieurs mois pas an</strong></p>
-        <div class="row">
+        <p><strong>Risque de manquer d'eau potable plusieurs mois par an</strong></p>
+        <!--<div class="row">
           <div class="col-lg-12 col-md-12 mx-auto">
             <img class="cartes" src="img/echelle.png" alt="echelle du risque">
           </div>
-        </div>
-<!--
-        <span style="color: #000000; background: #000000" alt="noir">___</span> Menace sérieuse de pénurie en eau potable
-        <p><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Beaucoup plus important qu'aujourd'hui </p>
-        <p><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Plus important qu'aujourd'hui<p/>
+        </div>-->
+
+        <span style="color: #000000; background: #000000" alt="noir">___</span> Menace de pénurie en eau potable
+        <p><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Risque ++ important qu'aujourd'hui </p>
+        <p><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Risque + important qu'aujourd'hui<p/>
         <p><span style="color: #dbeceb; background: #dbeceb" alt="orange">___</span> Comme aujourd'hui<p/>
--->
+        <button class="btn btn-secondary btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+          Comment avons-nous réalisé cette carte ?
+        </button>
 
     </div>
 
     <div class="row">
       <div class="col-lg-12 col-md-12 mx-auto">
-        <p><a class="lien" href="img/indice de sécheresse météo-france.pdf"
-              download="cartes sécheresses météo-france">Télécharger les cartes (PDF)</a></p>
+        <a class="lien" href="img/indice de sécheresse météo-france.pdf"
+              download="cartes sécheresses météo-france">Télécharger les cartes (PDF)</a>
 
-        <p>Le risque de manquer d'eau potable augmente fortement et rapidement dans les Alpes, le Jura et en Bretagne. En 2070, de nombreuses personnes dans toute la France devront se partager des quantités d'eau potable beaucoup plus faibles qu'aujourd'hui.
-        Les <a href="https://www.umr-cnrm.fr/IMG/pdf/2011_fmaif_rapport_final_v2.2.pdf">résultats du projet "Climsec" de Météo-France (voir p.10)</a> montrent que le changement climatique sera plus surprenant dans des endroits humides (Jura, Bretagne...) que dans des régions déjà sèches (pourtour méditerrannéen...). </p>
+        <p>Cette carte montre l’évolution des risques par rapport à aujourd’hui. Ils sont très inégaux selon les régions : des communes des Alpes, du Jura et de Bretagne risquent des pénuries d’eau potable. En règle générale,  le changement climatique sera plus surprenant dans des endroits humides (Jura, Bretagne...) que dans des régions déjà sèches (pourtour méditerrannéen…) d’après les <a href="https://www.umr-cnrm.fr/IMG/pdf/2011_fmaif_rapport_final_v2.2.pdf">résultats du projet "Climsec" de Météo-France (voir p.10)</a></p>
 
 
         <!-- Modal -->
@@ -162,24 +182,27 @@
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Comment cette carte est-elle réalisée?</h4>
+                <h4 class="modal-title" id="myModalLabel">Comment avons-nous réalisé cette carte? </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+
               </div>
 
               <div class="modal-body">
                 <p> Nous avons interrogé des scientifiques de différentes spécialités (eau ,climat, géologie...) et avons identifié ces critères : </p>
-                <p> <strong>1)<a href="http://drias-climat.fr/decouverte/carte/scenario/vignettes?domaine=SAFRAN&isDonneesImpact=true&generation=sres&nomImpact=climsec"> L'indicateur de sécheresse agricole de météo-France</a></strong> : il mesure l'impact du changement climatique sur l'eau présente dans le sol, or plus un sol est sec moins les réserves d'eau potable souterraines se remplissent.
+                <p> <strong>1)<a href="http://drias-climat.fr/decouverte/carte/scenario/vignettes?domaine=SAFRAN&isDonneesImpact=true&generation=sres&nomImpact=climsec"> L'indicateur de sécheresse agricole de météo-France</a></strong> : il mesure l'impact du changement climatique sur l'eau présente dans le sol, et indique la différence par rapport à aujourd'hui. Or plus un sol est sec moins les réserves d'eau potable souterraines se remplissent.
               Nous indiquons :
                   <ul>
-                <li>"Situation de crise" si l'indice est > -1,5 (extrêmement sec).</li>
-                <li>"Alerte" si l'indice est > -1 (très sec).</li>
+                <li><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> "Risque ++ qu'aujourd'hui" si les sols sont <strong>extrêmement secs</strong> : indice < -1,5.</li>
+                <li><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> "Risque + qu'aujourd'hui" si les sols sont <strong>très secs</strong> : indice < -1. </li>
+                <li><span style="color: #dbeceb; background: #dbeceb" alt="orange">___</span> " = à aujourd'hui" si les sols sont modéremment secs ou comme aujourd'hui : indice > -1.</li>
+
               </ul>
-               Nous avons paramétré le modèle avec les résultats annuels et le scénario climatique A2.
+               Nous avons paramétré le modèle avec les résultats annuels moyens et le scénario climatique A2.
                 </p>
                 <p>
                 <strong>2) La composition des roches souterraines</strong>, car cela peut aggraver l'impact du changement climatique. Nous indiquons :
                 <ul>
-                  <li>"Menace de pénurie d'eau potable" lorsqu'une région en relief est composées de roches calcaire compactes affleurantes (=en surface) et que l'indicateur de sécheresse agricole est >-1,5.</li>
+                  <li><span style="color: #000000; background: #000000" alt="noir">___</span> "Menace de pénurie d'eau potable " lorsqu'une région en relief est composées de roches calcaire compactes affleurantes (=en surface) et que l'indicateur de sécheresse agricole est >-1,5.</li>
                 </ul>
 
 
@@ -189,7 +212,7 @@
               </div>
 
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
               </div>
 
             </div><!-- /.modal-content -->
@@ -201,28 +224,23 @@
     <div class="row">
 
       <div class="col-lg-4 col-md-4 mx-auto">
-        <button  href="evaluer-risques.html" class="btn btn-primary  btn-lg btn-block">Témoignages & articles de presse</button>
+        <button  href="evaluer-risques.html" class="btn btn-primary  btn-lg btn-block">C'est quoi une pénurie d'eau potable en France ?</button>
       </div>
 
         <div class="col-lg-4 col-md-4 mx-auto">
-        <button   href="evaluer-risques.html" class="btn btn-warning  btn-lg btn-block">Quels mois de l'année seront à risques ? </button>
+        <button   href="evaluer-risques.html" class="btn btn-warning  btn-lg btn-block">Tutoriel pour connaître l'intensité du risque selon les saisons en 2030, 2050 et 2080</button>
       </div>
 
         <div class="col-lg-4 col-md-4 mx-auto">
-        <button class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">
-        Comment la carte est-elle réalisée ?
-        </button>
+
 
       </div>
     </div>
 </br>
 
 
-
-    </br>
-
     <h2>Zones à risques</h2>
-<p>Pour chacune des zones suivantes, nous présentons les risques éventuels, leurs causes, et les données scientifiques qui peuvent vous aider à les anticiper. </p>
+  <p>Pour chacune des zones suivantes, nous présentons les risques éventuels, leurs causes, et les données scientifiques qui peuvent vous aider à les anticiper. </p>
 <div class="row">
 
   <div class="col-lg-4 col-md-6 mb-4">
@@ -245,14 +263,8 @@
     </div>
   </div>
 
-  <p>En règle générale, pour savoir si vous résidez dans une zone à risque de pénurie d'eau potable, observez une année de fortes chaleurs et de pluies espacées. Cela modifie-t-il votre usage de l'eau potable ? Une année comme celle-ci sera probablement habituelle à partir de 2050. Vous pouvez connaître le moment de "bascule" grâce à la carte en haut de la page, ou grâce à ce tutoriel.</p>
-
-
-
 </div>
-
-
-    </br>
+          </br>
 
     <div class="row">
 
