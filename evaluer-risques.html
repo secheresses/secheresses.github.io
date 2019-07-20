@@ -25,7 +25,6 @@
 
 <body>
 
-<!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="index.html">Pénuries d'eau potable</a>
@@ -36,20 +35,37 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Accueil</a>
+          <a class="nav-link" >Carte des risques</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="evaluer-risques.html">Evaluer les risques</a>
+          <a class="nav-link" >Témoignages</a>
         </li>
+        <li class="btn-group nav-item">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            Tutos et ressources<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Zone à risque 1: Votre région est-elle à relief calcaire? </a></li>
+            <li><a href="#">Zone à risque 2: Votre région est-elle sur une roche socle ? </a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Tuto : Connaître l'intensité du risque selon les saisons en 2030, 2050, 2080</a></li>
+            <li><a href="#">Tuto : Où est puisée l'eau potable et qui contacter pour en savoir plus ? </a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Liste des données scientifiques</a></li>
+
+          </ul>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="qui-sommes-nous.html">Qui sommes-nous ? </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="methode.html">Méthode d'investigation </a>
-        </li>
       </ul>
     </div>
+
+
+
   </div>
+
 </nav>
 
 <!-- Page Header -->
@@ -85,13 +101,15 @@
       </div>
       <br>
       <p>Si vous avez de la chance, il peut y avoir de grandes réserves d'eau souterraines conservant l'eau potable. </p>
-      <p>Voici un tutoriel pour savoir si vous habitez dans une zone à risque : </p>
+      <p>Voici un tutoriel pour savoir si vous votre région a ce type de risque : </p>
       <ul>
-        <li>Etape 1 : Suis-je sur une zone à relief calcaire ?</li>
-        <li>Etape 2 : Y a t-il des grandes réserves souterraines d'eau potable ?</li>
+        <li><a class="lien"  href="#etape1">Etape 1 : Suis-je sur une zone à relief calcaire ?</a></li>
+        <li><a class="lien" href="#etape2">Etape 2 : Y a t-il des grandes réserves souterraines d'eau potable ?</a></li>
       </ul>
 
       <br/>
+
+      <!--
       <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item">
           <a style="font-size: 28px;" class="nav-link active" id="etape1-tab" data-toggle="tab" href="#etape1" role="tab" aria-controls="etape1"
@@ -104,9 +122,9 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="etape1" role="tabpanel" aria-labelledby="etape1-tab">
-          <!-- Contenus -->
+        -->
           <br>
-          <h3>Suis-je sur une zone à relief calcaire ?</h3>
+          <h3 id="etape1">Etape 1| Suis-je sur une zone à relief calcaire ?</h3>
           <span class="temps">Réalisation en 5 mn</span>
 
           <!-- 1er critère -->
@@ -117,11 +135,11 @@
           </div>
           <p>Si oui, votre région est de type calcaire "compact". Le risque de pénurie d'eau potable peut exister. Pour en savoir plus, passez à l'étape n°2.
 
-        </div>
+        <!--</div>
 
-        <div class="tab-pane fade" id="etape2" role="tabpanel" aria-labelledby="etape2-tab">
+        <div class="tab-pane fade" id="etape2" role="tabpanel" aria-labelledby="etape2-tab"> -->
           <br/>
-          <h3>Y a t-il des grandes réserves souterraines d'eau potable ?</h3>
+          <h3 id="etape2">Etape 2 | Y a t-il des grandes réserves souterraines d'eau potable ?</h3>
         <span class="temps">Réalisation en 15 mn</span>
 
           <p> Selon la profondeur des couches de calcaire dans le sol, il y a plus ou moins de risque. </p>
@@ -133,6 +151,9 @@
               <img  class="cartes"src="img/bdlisa.PNG">
             </div>
           </br>
+          <li>Ecrivez votre ville ou votre code postal, en haut à gauche, et cliquez sur la bonne ville dans la liste.</li>
+
+          </br>
 
 
           <li>Cliquez sur “couches” en haut à droite.</li>
@@ -142,28 +163,14 @@
           </br>
 
 
-          <li>Décochez la couche “entités hydrogéologiques affleurantes” et cochez la couche “Entités ou secteurs karstiques”.  </li>
+          <li>Décochez la couche “entités hydrogéologiques affleurantes” (4ème case) et cochez la couche “Entités ou secteurs karstiques” (1ère case).  </li>
           <div class="col-lg-10 col-md-10 mx-auto">
             <img class="cartes" src="img/cocher.PNG">
           </div>
         </br>
 
-          <li>Ecrivez votre ville ou votre code postal, en haut à gauche, et cliquez sur la bonne ville dans la liste.</li>
-          <div class="col-lg-10 col-md-10 mx-auto">
-            <img class="cartes" src="img/ville.PNG">
-          </div>
-          </br>
-
-
-          <li>Pour consulter la légende, cliquez sur l’étiquette:</li>
-          <div class="col-lg-10 col-md-10 mx-auto">
-            <img class="cartes" src="img/legende.PNG">
-          </div>
-          </br>
-
-
           <li>Êtes-vous principalement sur une zone bleu clair, bleu foncé, ou une zone où il n’y a rien ?</li>
-
+<p> Si vous ne voyez pas votre commune, n'hésitez-pas à décocher/recocher la cas "Entités ou secteurs karstiques" pour voir sous les étendues bleues.</p>
           <p><strong>Bleu clair = </strong> calcaire en surface ("affleurant")</p>
           <p>Dans ces zones, il y a très peu de chances que l’eau soit conservée dans de grandes réserves
             souterraines. C’est une zone à risque de pénurie d’eau potable. Nous vous encourageons à vous
