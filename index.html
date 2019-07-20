@@ -64,11 +64,7 @@
           </li>
         </ul>
       </div>
-
-
-
     </div>
-
   </nav>
 
   <!-- Page Header -->
@@ -98,13 +94,14 @@
   <!-- Main Content -->
   <div class="container">
 
-    <div class="tab-content col-lg-8 col-md-8 ">
-        <h2 id="start">Où doit t-on anticiper le partage de l'eau potable?</h2>
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <h2 id="start">Où doit-on anticiper le partage de l'eau potable?</h2>
+    </div>
     </div>
     </br>
 
-
-
+    <!-- onglets -->
     <div class="row">
       <div class="col-lg-12 col-md-12">
         <ul class="nav nav-tabs">
@@ -124,7 +121,7 @@
       </div>
     </div>
 
-    <!-- Contenu des onglets : les cartes -->
+    <!-- Les cartes et la légende -->
     <div class="row">
       <div class="tab-content col-lg-8 col-md-8 ">
         <div class="tab-pane fade show active" id="carte2030" role="tabpanel" aria-labelledby="carte2030-tab">
@@ -137,7 +134,6 @@
           <img class="cartes" style="margin: 30px;" src="img/carte2080.png" alt="carte de France des niveaux de sécheresse à l'horizon lointain">
         </div>
       </div>
-
 
       <div class="col-lg-4 col-md-4">
        <!-- <div class="card" >
@@ -167,26 +163,24 @@
         </button>
 
     </div>
+    </div>
 
     <div class="row">
       <div class="col-lg-12 col-md-12 mx-auto">
         <a class="lien" href="img/indice de sécheresse météo-france.pdf"
               download="cartes sécheresses météo-france">Télécharger les cartes (PDF)</a>
 
-        <p>Cette carte montre l’évolution des risques par rapport à aujourd’hui. Ils sont très inégaux selon les régions : des communes des Alpes, du Jura et de Bretagne risquent des pénuries d’eau potable. En règle générale,  le changement climatique sera plus surprenant dans des endroits humides (Jura, Bretagne...) que dans des régions déjà sèches (pourtour méditerrannéen…) d’après les <a href="https://www.umr-cnrm.fr/IMG/pdf/2011_fmaif_rapport_final_v2.2.pdf">résultats du projet "Climsec" de Météo-France (voir p.10)</a></p>
+        <p>Cette carte montre l’évolution des risques par rapport à aujourd’hui. Ils sont très inégaux selon les régions : des communes des Alpes, du Jura et de Bretagne risquent des pénuries d’eau potable. En règle générale,  le changement climatique sera plus surprenant dans des endroits humides (Jura, Bretagne...) que dans des régions déjà sèches (pourtour méditerrannéen…) d’après les <a href="https://www.umr-cnrm.fr/IMG/pdf/2011_fmaif_rapport_final_v2.2.pdf">résultats du projet "Climsec" de Météo-France (voir p.10)</a>. Vous pouvez aussi connaître en temps réel le risque de pénuries d'eau potable sur Propluvia. </p>
 
 
         <!-- Modal -->
-
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <h4 class="modal-title" id="myModalLabel">Comment avons-nous réalisé cette carte? </h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-
               </div>
-
               <div class="modal-body">
                 <p> Nous avons interrogé des scientifiques de différentes spécialités (eau ,climat, géologie...) et avons identifié ces critères : </p>
                 <p> <strong>1)<a href="http://drias-climat.fr/decouverte/carte/scenario/vignettes?domaine=SAFRAN&isDonneesImpact=true&generation=sres&nomImpact=climsec"> L'indicateur de sécheresse agricole de météo-France</a></strong> : il mesure l'impact du changement climatique sur l'eau présente dans le sol, et indique la différence par rapport à aujourd'hui. Or plus un sol est sec moins les réserves d'eau potable souterraines se remplissent.
@@ -195,7 +189,6 @@
                 <li><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> "Risque ++ qu'aujourd'hui" si les sols sont <strong>extrêmement secs</strong> : indice < -1,5.</li>
                 <li><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> "Risque + qu'aujourd'hui" si les sols sont <strong>très secs</strong> : indice < -1. </li>
                 <li><span style="color: #dbeceb; background: #dbeceb" alt="orange">___</span> " = à aujourd'hui" si les sols sont modéremment secs ou comme aujourd'hui : indice > -1.</li>
-
               </ul>
                Nous avons paramétré le modèle avec les résultats annuels moyens et le scénario climatique A2.
                 </p>
@@ -204,25 +197,20 @@
                 <ul>
                   <li><span style="color: #000000; background: #000000" alt="noir">___</span> "Menace de pénurie d'eau potable " lorsqu'une région en relief est composées de roches calcaire compactes affleurantes (=en surface) et que l'indicateur de sécheresse agricole est >-1,5.</li>
                 </ul>
-
-
                 N.B : ce n'est pas encore exhaustif, nous ajouterons les régions à roches socles (ex: Bretagne).
                 </p>
-
               </div>
-
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
               </div>
-
             </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-      </div>
+
+      </div><!-- fin div col-->
     </div><!-- fin row-->
 
     <div class="row">
-
       <div class="col-lg-4 col-md-4 mx-auto">
         <button  href="evaluer-risques.html" class="btn btn-primary  btn-lg btn-block">C'est quoi une pénurie d'eau potable en France ?</button>
       </div>
@@ -232,16 +220,19 @@
       </div>
 
         <div class="col-lg-4 col-md-4 mx-auto">
-
-
       </div>
+
     </div>
 </br>
 
+      <div class="row">
+        <div class="col-lg-12 col-md-12 mx-auto">
 
     <h2>Zones à risques</h2>
   <p>Pour chacune des zones suivantes, nous présentons les risques éventuels, leurs causes, et les données scientifiques qui peuvent vous aider à les anticiper. </p>
-<div class="row">
+        </div>
+      </div>
+          <div class="row">
 
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100">
