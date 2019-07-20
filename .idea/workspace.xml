@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+            <state relative-caret-position="266">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#span#2;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -34,6 +34,24 @@
                 <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#li#0;n#ul#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/_navbar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/_bootstrap-overrides.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="210" column="14" selection-start-line="210" selection-start-column="14" selection-end-line="210" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -183,12 +201,12 @@
       <workItem from="1563294903411" duration="1708000" />
       <workItem from="1563456646011" duration="11022000" />
       <workItem from="1563539252992" duration="1611000" />
-      <workItem from="1563601566389" duration="11920000" />
+      <workItem from="1563601566389" duration="12279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119474000" />
+    <option name="totallyTimeSpent" value="119833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -430,24 +448,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_bootstrap-overrides.scss">
+    <entry file="file://$PROJECT_DIR$/scss/_navbar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="208" selection-start-line="208" selection-end-line="208" />
+        <state relative-caret-position="17">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_navbar.scss">
+    <entry file="file://$PROJECT_DIR$/scss/_bootstrap-overrides.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+        <state relative-caret-position="459">
+          <caret line="210" column="14" selection-start-line="210" selection-start-column="14" selection-end-line="210" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="266">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#span#2;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
