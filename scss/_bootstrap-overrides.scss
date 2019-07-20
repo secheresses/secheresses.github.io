@@ -162,8 +162,9 @@ body {
 background-color: white;
 }
 
-a .lien {
+.lien {
   text-decoration: underline;
+  color: #0f6674;
 }
 
 
@@ -214,4 +215,62 @@ margin : auto;
 
 
 
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  margin:0;
+}
+
+
+.carte-sombre {
+  .card-title {
+    margin: 0;
+  }
+
+  .card img {
+    position: relative;
+    display: block;
+    transition: all .2s ease-in-out;
+  }
+
+  .block:hover img {
+    transition: all .2s ease-in-out;
+    transform: scale(.95); /* CSS3 */
+    -moz-transform: scale(.95); /* Firefox */
+    -webkit-transform: scale(.95); /* Webkit */
+    -o-transform: scale(.95); /* Opera */
+    -ms-transform: scale(.95); /* IE 9 */
+  }
+
+
+.card-footer {
+    padding: 0 1.25rem 1.25rem;
+    background-color: #1b1e21;
+    border: none;
+  border-radius: 10px;
+  }
+
+  .card-footer {
+    background-color: #1b1e21;;
+  }
+
+}
+
+.light {
+  color : white;
+}
+
+.phrase-presentation {
+  color: #abdde5;
+  font-size: 26px;
+  padding-top: 15px;
+}
+
+.nb-interview {
+  background-color: #abdde5;
+  padding : 3px;
+  border-radius: 10px;
+
+}
 
