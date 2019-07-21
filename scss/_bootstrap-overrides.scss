@@ -246,13 +246,13 @@ margin : auto;
 
 .card-footer {
     padding: 0 1.25rem 1.25rem;
-    background-color: #1b1e21;
+    background-color: #202326;
     border: none;
   border-radius: 10px;
   }
 
   .card-footer {
-    background-color: #1b1e21;;
+    background-color: #202326;;
   }
 
 }
@@ -267,10 +267,16 @@ margin : auto;
   padding-top: 15px;
 }
 
-.nb-interview {
+.nb-interview-box {
   background-color: #abdde5;
-  padding : 3px;
+  padding : 12px;
   border-radius: 10px;
+  margin: 6px;
+}
+
+.nb-interview {
+  font-size: 28px;
+  font-weight: bold;
 
 }
 
