@@ -38,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="index.html" class="nav-link" >Carte des risques</a>
+            <a href="index.html" class="nav-link" >Accueil</a>
           </li>
           <li class="nav-item">
             <a href="temoignages-penurie-eau-potable.html" class="nav-link" >Témoignages</a>
@@ -52,9 +52,8 @@
               <li><a href="zone-risque-roches-granit.html">Zone à risque : Les régions à roches granitiques</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="tutoriel-anticiper-changement-climatique.html">Anticiper le changement climatique</a></li>
-              <li><a href="guide-réunion-citoyenne.html">Organiser une réunion citoyenne</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="references.html">Références</a></li>
+              <li><a href="references.html">Références scientifiques</a></li>
 
             </ul>
           </li>
@@ -98,17 +97,15 @@
 
     <div class="row">
       <div class="col-lg-12 col-md-12">
-        <h2 id="start" style="font-size: 32px;">Le manque d'eau potable : où et quand ?</h2>
-        <p>Le changement climatique sera plus surprenant dans des endroits très "verts" comme le Jura ou la Bretagne, amplifiant les risques de pénurie d'eau potable (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
-
+        <h2 id="start" style="font-size: 32px;">Y a t-il un risque de pénurie d'eau potable sur mon territoire?</h2>
       </div>
     </div>
     </br>
 
-    <!-- onglets -->
+    <!-- onglets pour les années -->
     <div class="row">
       <div class="col-lg-12 col-md-12">
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-pills">
         <li class="nav-item">
 
             <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab" data-toggle="tab" href="#carte2030" role="tab" aria-controls="carte2030"
@@ -125,6 +122,20 @@
         </ul>
       </div>
     </div>
+
+    <!-- onglets pour les saisons
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected value="1">Printemps</option>
+          <option value="2">Eté</option>
+          <option value="3">Automne</option>
+          <option value="3">Hiver</option>
+        </select>
+
+      </div>
+    </div> -->
 
     <!-- Les cartes et la légende -->
     <div class="row">
@@ -169,20 +180,18 @@
           </ul>
         </div>-->
 
-        <p><strong>Plusieurs mois par an, en France, il y aura désormais des ...</strong></p>
-        <p><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Limitations en eau potable*<p/>
-        <p><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Interdictions de consommation d'eau potable*</p>
-        <span style="color: #000000; background: #000000" alt="noir">___</span> Menaces de pénurie d'eau potable**
-        <p style="font-size: smaller;">*Usages non prioritaires (arrosages, piscines et agricoles).
-          </br>**Pour tous les usages, et même santé, sécurité civile, eau potable, salubrité.</p>
-        <!-- <p><span style="color: #dbeceb; background: #dbeceb" alt="orange">___</span> Comme aujourd'hui<p/>-->
-        <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">
-          "Zoom" sur les données scientifiques</button> </br>
+       <!-- <p><strong>Plusieurs mois par an, en France, il y aura désormais des ...</strong></p>-->
+        <p><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Alerte : limitations des prélèvements pour toutes les activités</p>
+        <p><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Crise : arrêt du droit de prélever l'eau (industrie, agriculture, jardinage...)</p>
+        <p><span style="color: #000000; background: #000000" alt="noir">___</span> Risque de pénuries en eau (dont potable)</p>
+        <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">"Zoom" sur les données scientifiques</button> </br>
 
 
             <a  href="temoignages-penurie-eau-potable.html" class="btn btn-dark btn-lg "> Témoignages de pénuries d'eau potable en France</a>
 
     </div>
+      <p>Contrairement à certaines idées reçues, le changement climatique amplifiera les risques de pénurie d'eau potable dans des endroits "verts" comme le Jura ou la Bretagne (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
+
     </div>
 
     <div class="row">
@@ -202,25 +211,15 @@
 
 
 
-                <p>Les zones rouges et oranges sont les régions où le changement climatique sera le plus surprenant.
+                <p>Nous avons indiqué en rouge et orange les régions où le changement climatique amplifiera les risques de manquer d'eau. Nous avons utilisé pour cela les données du projet Climsec produites par météoFrance.
                 <ul>
-                <li><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Interdictions = impact très important du changement climatique</li>
-                <li><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Limitations = impact important du changement climatique</li>
               </ul>
-                </p> <!--amplifiant les risques actuels de manquer d'eau potable. Par chance, il est possible de l'anticiper. </br></br><strong>Comment?</strong> En utilisant l'indice de sécheresse agricole (=sols très secs) développé par les chercheurs de Météo-France. Il estime à quel point il y aura moins d'eau dans les sols dans le futur. Et sans eau dans les sols, les réserves d'eau potable sous-terraines ne peuvent se remplir. </p> -->
-
-
                 <p><a class="btn btn-warning" href="tutoriel-anticiper-changement-climatique.html">Anticiper le changement climatique</a></p>
 
+ <p> Nous avons indiqué en noir les zones où les risques seront fortement amplifiés <strong>et</strong> où les roches souterraines ne permettent pas de stocker efficacement l'eau potable. Voici des schémas des phénomènes et les liens vers les données utilisées :
 
-
-                                  <strong>Les zones noires = menacées de pénurie d'eau potable</strong>
-                                <p>
-
-                                  Ce sont les zones où le changement climatique sera très important <strong>et</strong> où les roches souterraines ne permettent pas de stocker efficacement l'eau potable.
-
-                                <p><a href="zone-risque-relief-calcaire.html" class="btn btn-primary">Zone à risque A : Les régions à relief calcaire "de surface"</a></p>
-                                <p><a href="zone-risque-roches-granit.html" class="btn btn-primary">Zone à risque B : Les régions à roches granitiques (en cours d'exploration)</a></p>
+                                <p><a href="zone-risque-relief-calcaire.html" class="btn btn-dark">Régions à relief calcaire (Jura, Alpes, Pyrennées,...)</a></p>
+                                <p><a href="zone-risque-roches-granit.html" class="btn btn-dark">Régions à roches granitiques (Bretagne,...)</a></p>
 
 
 
@@ -254,22 +253,21 @@
 
 </br>
 
-      <div class="row" style="background-color: #951E1E">
+      <div class="row" style="background-color: #FCC11A">
         <div class="col-lg-12 col-md-12 mx-auto">
 
           </br>
-    <h2 style="color:#ffffff; font-size: 32px;"><img style="max-width: 70px; padding-right: 15px;" src="img/caution.png" alt="">Quelles sont les zones à risques ? </h2></br>
+    <h2 style="color:black; font-size: 32px;"><img style="max-width: 70px; padding-right: 15px;">Quelles sont les zones à risques ? </h2></br>
 
-          <!--<p>Pour chacune des zones suivantes, nous présentons les causes des risques, et les données scientifiques qui peuvent vous aider à les anticiper. </p>-->
         </div>
       </div>
 
-          <div class="row" style="background-color: #951E1E">
+          <div class="row" style="background-color: #FCC11A">
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100" style="background-color: #ffffff">
       <div class="card-body">
         <h5 class="card-title"><img style="max-width: 70px; padding-right: 15px;" src="img/calcaire.png" alt="">Régions à relief calcaire (Jura, Alpes, Pyrennées,...) </h5></br>
-        <a href="zone-risque-relief-calcaire.html" class="btn btn-warning">Suis-je dans cette zone ? </a>
+        <a href="zone-risque-relief-calcaire.html" class="btn btn-dark">Suis-je dans cette zone ? </a>
         <p class="card-text" style="font-size: smaller;">Des pénuries ont déjà eu lieu dans ce type de région. En 2017, 10% des communes du Haut-Doubs ont eu le robinet coupé plusieurs heures par jour et durant 3 mois !</p>
       </div>
     </div>
@@ -279,7 +277,7 @@
     <div class="card h-100"  style="background-color: #ffffff">
       <div class="card-body">
         <h5 class="card-title"><img style="max-width: 90px; padding-right: 15px;" src="img/granit.png" alt="">Régions à roches granitiques (Bretagne,...)</h5></br>
-        <a href="" class="btn btn-warning">Prendre part à notre investigation</a>
+        <a href="" class="btn btn-dark">Prendre part à notre investigation</a>
 
         <p class="card-text" style="font-size: smaller;">La Bretagne souffre déjà de pollution de l'eau, et risque de souffrir de pénurie d'eau potable. Explorez avec nous les conséquences du changement climatique dans ces régions.</p>
       </div>
@@ -312,7 +310,7 @@
 
       <div class="col-lg-12 col-md-12 mx-auto">
         </br>
-      <h2 style="color: black; font-size: 32px;"><img style="max-width: 70px; padding-right: 15px;" src="img/psychology.png" alt="">Quelques idées reçues</h2>
+      <h2 style="color: black; font-size: 32px;"><img style="max-width: 70px; padding-right: 15px;" src="img/psychology.png" alt="">Idées reçues</h2>
         </br>
 
 
@@ -390,7 +388,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-8 mx-auto">
         </br>
-        <a  href="temoignages-penurie-eau-potable.html" class="btn btn-dark  btn-lg btn-block">Témoignages de pénuries d'eau potable en France</a>
+        <a  href="tutoriel-anticiper-changement-climatique.html" class="btn btn-warning  btn-lg btn-block">Anticipez le changement climatique</a>
       </div>
 
     </div>
