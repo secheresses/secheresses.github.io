@@ -102,72 +102,51 @@
     </div>
     </br>
 
-    <!-- onglets pour les années -->
+    <!-- HORIZON TEMPOREL-->
     <div class="row">
-      <div class="col-lg-12 col-md-12">
+      <div class="col-lg-4 col-md-4">
         <ul class="nav nav-pills">
         <li class="nav-item">
 
-            <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab" data-toggle="tab" href="#carte2030" role="tab" aria-controls="carte2030"
-               aria-selected="true">2030</a>
+            <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab">2030 / 2040</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab" data-toggle="tab" href="#carte2050" role="tab" aria-controls="carte2050"
-               aria-selected="true">2050</a>
+            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab">2050 / 2060</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab" data-toggle="tab" href="#carte2080" role="tab" aria-controls="carte2070"
-               aria-selected="true">2080</a>
+            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab">2080 / 2090</a>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- onglets pour les saisons
-    <div class="row">
-      <div class="col-lg-4 col-md-4">
 
-        <select class="custom-select" id="inputGroupSelect01">
-          <option selected value="1">Printemps</option>
-          <option value="2">Eté</option>
-          <option value="3">Automne</option>
-          <option value="3">Hiver</option>
+    <!-- SAISONS-->
+      <div class="row">
+      <div class="col-lg-3 col-md-3" style="padding-top: 8px;">
+
+        <div style="font-size: smaller; font-weight: bold;">Saison :</div>
+        <select class="custom-select" id="saisons" >
+          <option selected value="printemps">Printemps</option>
+          <option value="ete">Eté</option>
+          <option value="automne">Automne</option>
+          <option value="hiver">Hiver</option>
         </select>
 
       </div>
-    </div> -->
+    </div>
 
-    <!-- Les cartes et la légende -->
+    <!-- CARTE & LEGENDE -->
     <div class="row">
       <div class="tab-content col-lg-8 col-md-8 ">
-        <div class="tab-pane fade show active" id="carte2030" role="tabpanel" aria-labelledby="carte2030-tab">
-          <img class="cartes" style="margin: 30px;" src="img/carte2030.png" width="669" height="688" border="0" usemap="#map" />
 
-          <map name="map">
-            <!-- #$-:Image map file created by GIMP Image Map plug-in -->
-            <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
-            <!-- #$-:Please do not edit lines starting with "#$" -->
-            <!-- #$VERSION:2.3 -->
-            <!-- #$AUTHOR:Fanny -->
-            <area shape="circle" coords="98,219,30" href="http://fbreuneval.github.io/zone-risque-relief-calcaire.html" />
-            <area shape="circle" coords="506,261,46"  nohref="nohref" />
-            <area shape="circle" coords="495,445,54" href="http://fbreuneval.github.io/zone-risque-relief-calcaire.html" />
-            <area shape="circle" coords="379,482,23" href="http://fbreuneval.github.io/zone-risque-relief-calcaire.html" />
-            <area shape="circle" coords="261,374,58" href="http://fbreuneval.github.io/zone-risque-relief-calcaire.html" />
-          </map>
+        <!-- CARTE -->
+        <div class="tab-pane fade show active" id="carte">
+          <!-- si l'image s'ajuste mal dans le cadre, tu peux ajouter la classe "carte" à l'image -->
 
-
-
-          <!--<img class="cartes" style="margin: 30px;" src="img/carte2030.png" alt="carte de France des niveaux de sécheresse à l'horizon proche"> -->
-        </div>
-        <div class="tab-pane fade" id="carte2050" role="tabpanel" aria-labelledby="carte2050-tab">
-          <img class="cartes" style="margin: 30px;" src="img/carte2050.png" alt="carte de France des niveaux de sécheresse à l'horizon moyen">
-        </div>
-        <div class="tab-pane fade" id="carte2080" role="tabpanel" aria-labelledby="carte2080-tab">
-          <img class="cartes" style="margin: 30px;" src="img/carte2080.png" alt="carte de France des niveaux de sécheresse à l'horizon lointain">
-        </div>
       </div>
 
+        <!-- LEGENDE -->
       <div class="col-lg-4 col-md-4">
        <!-- <div class="card" >
           <ul class="list-group list-group-flush">
@@ -186,8 +165,7 @@
         <p><span style="color: #000000; background: #000000" alt="noir">___</span> Risque de pénuries en eau (dont potable)</p>
         <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">"Zoom" sur les données scientifiques</button> </br>
 
-
-            <a  href="temoignages-penurie-eau-potable.html" class="btn btn-dark btn-lg "> Témoignages de pénuries d'eau potable en France</a>
+        <a  href="temoignages-penurie-eau-potable.html" class="btn btn-dark btn-lg "> Témoignages de pénuries d'eau potable en France</a>
 
     </div>
       <p>Contrairement à certaines idées reçues, le changement climatique amplifiera les risques de pénurie d'eau potable dans des endroits "verts" comme le Jura ou la Bretagne (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
@@ -288,22 +266,6 @@
             </br>
 
           </div>
-<!--
-    <div class="row">
-
-      <div class="col-lg-12 col-md-12 mx-auto">
-
-        <h2>Pourquoi le changement climatique peut créer des pénuries d'eau potable ? </h2>
-        <p>L'eau potable que nous consommons provient en majorité des réserves d'eau souterraines, qui sont de très bonne qualité. Elles sont remplies par l'eau de pluie ou de la fonte des glaces s'infiltrant dans le sol. Cependant, le changement climatique produit deux phénomènes :
-        <ul>
-          <li><strong>La hausse des tempétatures :</strong> l'eau s'évapore plus et en conséquence moins d'eau s'infiltre dans le sol.</li>
-          <li><strong>L'espacement des pluies :</strong>  de longues périodes sans pluie empêchent les réserves souterraines de se renouveller. Si vos réserves souterraines sont petites et/ou que l'eau ruisselle vers des altitudes plus basses, il y a un risque de pénurie d'eau potable.</li>
-        </ul>
-        </p>
-
-      </div>
-    </div>
-</br>-->
 
 
     <div class="row" style="background-color:#FCC11A;">
