@@ -1,5 +1,7 @@
-var SSWI = function(mapId, colorscale, spinnerId, rootUrl, colorscaleId) {
-  var map = L.map(mapId).setView([46.4, 2.5], 5);
+var SSWI = function(mapId, colorscale, spinnerId, rootUrl, colorscaleId, defaultCoords, defaultZoom) {
+  if (defaultCoords === undefined) defaultCoords = [46.4, 2.5];
+  if (defaultZoom === undefined) defaultZoom = 5;
+  var map = L.map(mapId).setView(defaultCoords, defaultZoom);
   L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
@@ -19,7 +21,7 @@ var SSWI = function(mapId, colorscale, spinnerId, rootUrl, colorscaleId) {
       container.style.cursor = "pointer";
    
       container.onclick = function(){
-        map.setView([46.4, 2.5], 5);
+        map.setView(defaultCoords, defaultZoom);
       }
       return container;
     },

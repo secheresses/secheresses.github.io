@@ -17,8 +17,9 @@
   var sswi = SSWI(
     "carte",
     ["transparent", "#e08f17", "#ef0d1f", "#000000"],
-    "spinner",
-    "/data/"
+    "carte-spinner",
+    "/data/",
+    "carte-legende"
   );
 
   function update() {
