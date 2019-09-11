@@ -25,7 +25,13 @@
   function update() {
     return sswi.update(getHorizon(), getSeason());
   }
-  $("#horizon li a").click(update);
+  $("#horizon li a").click(function(e) {
+    $("#horizon li a").each(function(i, el) {
+      $(el).removeClass("active");
+    });
+    $(e.target).addClass("active");
+    update();
+  });
   seasonSelect.addEventListener("change", update);
   update(); 
 })();

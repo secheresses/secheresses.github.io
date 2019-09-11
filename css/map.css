@@ -1,3 +1,7 @@
+#horizon li a {
+  cursor: pointer;
+}
+
 #saison-conteneur label {
   font-size: smaller;
   font-weight: bold;
