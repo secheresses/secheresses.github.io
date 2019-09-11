@@ -1,14 +1,14 @@
-const SSWI = (mapId, colorscale, spinnerId, rootUrl, colorscaleId) => {
-  const map = L.map(mapId).setView([46.4, 2.5], 5);
+var SSWI = function(mapId, colorscale, spinnerId, rootUrl, colorscaleId) {
+  var map = L.map(mapId).setView([46.4, 2.5], 5);
   L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
-  const customControl = L.Control.extend({
+  var customControl = L.Control.extend({
     options: {
       position: "topleft" 
     },
-    onAdd: function (map) {
-      const container = L.DomUtil.create(
+    onAdd: function(map) {
+      var container = L.DomUtil.create(
         "div",
         "leaflet-bar leaflet-control leaflet-control-custom"
       );
@@ -26,53 +26,56 @@ const SSWI = (mapId, colorscale, spinnerId, rootUrl, colorscaleId) => {
   });
   map.addControl(new customControl());
 
-  let layer;
+  var layer;
 
-  const fetchData = (fname) => fetch(rootUrl + fname).then((response) => response.json());
+  function fetchData(fname) {
+    return fetch(rootUrl + fname).then(function(resp) { return resp.json() });
+  }
 
-  const renderColorScale = (wrapperId, colors, legends) => {
-    const wrapper = document.getElementById(wrapperId);
+  function renderColorScale(wrapperId, colors, legends) {
+    var wrapper = document.getElementById(wrapperId);
 
-    for (let i in colors) {
+    for (var i in colors) {
       if (colors[i] == "transparent") continue;
-      let row = document.createElement("div");
+      var row = document.createElement("div");
 
-      let colorBox = document.createElement("div");
+      var colorBox = document.createElement("div");
       colorBox.className = "color_box";
       colorBox.style.background = colors[i];
       row.appendChild(colorBox);
 
-      let legend = document.createElement("p");
+      var legend = document.createElement("p");
       legend.innerHTML = legends[i];
       legend.className = "legend";
       row.appendChild(legend);
 
       wrapper.appendChild(row);
     }
-  };
+  }
 
-  const showSpinner = (show = true) => {
-    const spinner = document.getElementById(spinnerId);
+  function showSpinner(show) {
+    if (show === undefined) show = true;
+    var spinner = document.getElementById(spinnerId);
     if (show) spinner.style.visibility = "visible";
     else spinner.style.visibility = "hidden";
-  };
+  }
 
-  const onEachFeature = (feature, layer) => {
+  function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.riskLevel !== undefined) {
       layer.bindPopup(feature.properties.riskLevel);
     }
-  };
+  }
 
-  const update = (horizon, season) => {
+  function update(horizon, season) {
     showSpinner();
-    fetchData(horizon + "_" + season + ".json").then(geojson => {
+    fetchData(horizon + "_" + season + ".json").then(function(geojson) {
       if (layer !== undefined) {
         map.removeLayer(layer);
       }
       layer = L.geoJSON(geojson, {
         onEachFeature: onEachFeature,
-        pointToLayer: (feature, latlng) => {
-          const color = colorscale[feature.properties.riskLevel];
+        pointToLayer: function(feature, latlng) {
+          var color = colorscale[feature.properties.riskLevel];
           return L.circleMarker(latlng, {
             radius: 1.5,
             fillColor: color,
@@ -86,13 +89,13 @@ const SSWI = (mapId, colorscale, spinnerId, rootUrl, colorscaleId) => {
       layer.addTo(map);
       showSpinner(false);
     });
-  };
-
-  if (colorscaleId !== undefined) {
-    fetchData("metadata.json").then(
-      data => renderColorScale(colorscaleId, colorscale, data.riskLevels)
-    );
   }
 
-  return { update };
+  if (colorscaleId !== undefined) {
+    fetchData("metadata.json").then(function(data) {
+      return renderColorScale(colorscaleId, colorscale, data.riskLevels);
+    });
+  }
+
+  return { update: update };
 };
