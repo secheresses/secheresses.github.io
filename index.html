@@ -10,16 +10,21 @@
 
   <title>Pénuries d'eau potable</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/clean-blog.css" rel="stylesheet">
+  <link href="/css/clean-blog.css" rel="stylesheet">
+  <link href="/css/map.css" rel="stylesheet">
 
 </head>
 
@@ -100,8 +105,8 @@
         <h2 id="start" style="font-size: 32px;">Y a t-il un risque de pénurie d'eau potable sur mon territoire?</h2>
       </div>
     </div>
-    </br>
 
+<<<<<<< HEAD
 
     <!-- HORIZON TEMPOREL-->
     <div class="row">
@@ -110,68 +115,65 @@
         <li class="nav-item">
 
             <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab">2030 / 2040</a>
+=======
+    <!-- CONFIG CARTE-->
+    <div class="row">
+      <!-- HORIZON TEMPOREL-->
+      <div class="col-lg-6 col-md-6">
+        <ul id="horizon" class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab" data-horizon="H1">2030 / 2040</a>
+>>>>>>> 64ccf26ab59353b622f8851358539e7988c7da6d
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab">2050 / 2060</a>
+            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab" data-horizon="H2">2050 / 2060</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab">2080 / 2090</a>
+            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab" data-horizon="H3">2080 / 2090</a>
           </li>
         </ul>
       </div>
-    </div>
 
-
-    <!-- SAISONS-->
-      <div class="row">
-      <div class="col-lg-3 col-md-3" style="padding-top: 8px;">
-
-        <div style="font-size: smaller; font-weight: bold;">Saison :</div>
+      <!-- SAISONS-->
+      <div class="d-flex align-items-center col-lg-6 col-md-6" style="padding-top: 8px;" id="saison-conteneur">
+        <label>Saison&nbsp;:</label>
         <select class="custom-select" id="saisons" >
-          <option selected value="printemps">Printemps</option>
-          <option value="ete">Eté</option>
-          <option value="automne">Automne</option>
-          <option value="hiver">Hiver</option>
+          <option selected value="spring">Printemps</option>
+          <option value="summer">Eté</option>
+          <option value="autumn">Automne</option>
+          <option value="winter">Hiver</option>
         </select>
-
       </div>
     </div>
+
+      <div class="row">
+        <div id="carte-spinner" class="col-lg-12 col-md-12">
+          <i class="fas fa-spin fa-2x fa-spinner"></i>
+        </div>
+      </div>
 
     <!-- CARTE & LEGENDE -->
-    <div class="row">
-      <div class="tab-content col-lg-8 col-md-8 ">
+    <div class="d-flex flex-wrap">
+      <div id="carte"><!-- Rempli par js/map.js --></div>
 
-        <!-- CARTE -->
-        <div class="tab-pane fade show active" id="carte">
-          <!-- si l'image s'ajuste mal dans le cadre, tu peux ajouter la classe "carte" à l'image -->
+      <!-- LEGENDE -->
+      <div id="carte-legende"><!-- Rempli par js/map.js --></div>
+    </div>
 
+    <div class="row" id="info-buttons">
+      <div class="col-lg-6 col-md-6">
+        <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+          "Zoom" sur les données scientifiques
+        </button>
       </div>
-
-        <!-- LEGENDE -->
-      <div class="col-lg-4 col-md-4">
-       <!-- <div class="card" >
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Légende</strong></li>
-            <li class="list-group-item">Plusieurs mois par an ...
-              <p><span style="color: #a9381c; background: #000000" alt="noir">___</span> Menace de pénurie en eau potable</p>
-              <p><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Situation de crise </p>
-              <p><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Etat d'alerte<p/>
-            </li>
-          </ul>
-        </div>-->
-
-       <!-- <p><strong>Plusieurs mois par an, en France, il y aura désormais des ...</strong></p>-->
-        <p><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Alerte : limitations des prélèvements pour toutes les activités</p>
-        <p><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Crise : arrêt du droit de prélever l'eau (industrie, agriculture, jardinage...)</p>
-        <p><span style="color: #000000; background: #000000" alt="noir">___</span> Risque de pénuries en eau (dont potable)</p>
-        <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">"Zoom" sur les données scientifiques</button> </br>
-
-        <a  href="temoignages-penurie-eau-potable.html" class="btn btn-dark btn-lg "> Témoignages de pénuries d'eau potable en France</a>
-
+      <div class="col-lg-6 col-md-6">
+        <a href="temoignages-penurie-eau-potable.html" class="btn btn-dark btn-lg ">
+          Témoignages de pénuries d'eau potable en France
+        </a>
+      </div>
     </div>
-      <p>Contrairement à certaines idées reçues, le changement climatique amplifiera les risques de pénurie d'eau potable dans des endroits "verts" comme le Jura ou la Bretagne (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
 
-    </div>
+    <p>Contrairement à certaines idées reçues, le changement climatique amplifiera les risques de pénurie d'eau potable dans des endroits "verts" comme le Jura ou la Bretagne (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
 
     <div class="row">
       <div class="col-lg-12 col-md-12 mx-auto">
@@ -400,12 +402,16 @@
   </footer> -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
-
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+  <script src="/js/clean-blog.min.js"></script>
+  <script src="/js/sswi.min.js"></script>
+  <script src="/js/map.min.js"></script>
   </div>
 </body>
 

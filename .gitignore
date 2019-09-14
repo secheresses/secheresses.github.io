@@ -1,1 +1,4 @@
 node_modules
+vendor
+js/*.min.js
+css/*.min.css
