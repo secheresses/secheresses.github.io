@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="267734dd-a792-4c86-8d66-225dbeb6b208" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/a-vous-la-parole.html" beforeDir="false" afterPath="$PROJECT_DIR$/a-vous-la-parole.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qui-sommes-nous.html" beforeDir="false" afterPath="$PROJECT_DIR$/qui-sommes-nous.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/references.html" beforeDir="false" afterPath="$PROJECT_DIR$/references.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/temoignages-penurie-eau-potable.html" beforeDir="false" afterPath="$PROJECT_DIR$/temoignages-penurie-eau-potable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutoriel-anticiper-changement-climatique.html" beforeDir="false" afterPath="$PROJECT_DIR$/tutoriel-anticiper-changement-climatique.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zone-risque-relief-calcaire.html" beforeDir="false" afterPath="$PROJECT_DIR$/zone-risque-relief-calcaire.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="348" column="26" lean-forward="true" selection-start-line="348" selection-end-line="349" />
+            <state relative-caret-position="201">
+              <caret line="344" selection-start-line="344" selection-end-line="351" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -68,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/temoignages-penurie-eau-potable.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="161" column="82" selection-start-line="161" selection-start-column="82" selection-end-line="161" selection-end-column="82" />
+            <state relative-caret-position="184">
+              <caret line="373" selection-start-line="373" selection-end-line="373" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -100,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zone-risque-relief-calcaire.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-768">
@@ -190,8 +184,8 @@
         <option value="$PROJECT_DIR$/qui-sommes-nous.html" />
         <option value="$PROJECT_DIR$/references.html" />
         <option value="$PROJECT_DIR$/tutoriel-anticiper-changement-climatique.html" />
-        <option value="$PROJECT_DIR$/temoignages-penurie-eau-potable.html" />
         <option value="$PROJECT_DIR$/zone-risque-relief-calcaire.html" />
+        <option value="$PROJECT_DIR$/temoignages-penurie-eau-potable.html" />
       </list>
     </option>
   </component>
@@ -313,12 +307,12 @@
       <workItem from="1567951280050" duration="642000" />
       <workItem from="1568049895871" duration="37000" />
       <workItem from="1570349165006" duration="66000" />
-      <workItem from="1570391341884" duration="1074000" />
+      <workItem from="1570391341884" duration="1188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218674000" />
+    <option name="totallyTimeSpent" value="218788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1223" height="735" extended-state="6" />
@@ -516,10 +510,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zone-risque-relief-calcaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768">
+          <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="348" column="26" lean-forward="true" selection-start-line="348" selection-end-line="349" />
+        <state relative-caret-position="201">
+          <caret line="344" selection-start-line="344" selection-end-line="351" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -535,8 +541,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/temoignages-penurie-eau-potable.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="161" column="82" selection-start-line="161" selection-start-column="82" selection-end-line="161" selection-end-column="82" />
+        <state relative-caret-position="184">
+          <caret line="373" selection-start-line="373" selection-end-line="373" />
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -559,18 +565,6 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zone-risque-relief-calcaire.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-768">
-          <caret line="150" column="44" selection-start-line="150" selection-start-column="44" selection-end-line="150" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
