@@ -10,22 +10,25 @@
 
   <title>Pénuries d'eau potable</title>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/fontawesome.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
-  <link href="css/clean-blog.css" rel="stylesheet">
+  <link href="assets/css/map.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
 
 </head>
 
 <body>
-
-
 
   <!-- Navigation -->
   <nav class="navbar  navbar-light fixed-top" id="mainNav">
@@ -84,7 +87,7 @@
             <span class="meta">Ces dernières années les canicules ont provoqué des pénuries d'eau potable pour plusieurs dizaines de milliers d'habitants de France métropolitaine. À partir de 2040 les situations qui étaient exceptionnelles deviendront la situation normale pour toute une partie du territoire français. Nous sommes un collectif citoyens et avons passé du temps avec des habitants, agriculteurs et maires qui ont vécu des pénuries d'eau potable et sont sur des zones qui manquent régulièrement d'eau <a style="color: white;" class="lien" href="temoignages-penurie-eau-potable.html" ><strong>(consultez leurs témoignages)</strong></a>. Le danger pour la population survient lorsque les conflits territoriaux mènent à des situations d'appropriation de l'eau au détriment des autres. C'est à nous/vous de faire le nécessaire pour que l'eau, qui sera un or bleu sur certains territoires, soit un bien commun.</span>
             </br>
             </br>
-            <p class="arrowdown"><a href="#start"><img src="vendor/fontawesome-free/svgs/solid/arrow-down.svg" alt="Poursuivre la lecture"></a></p>
+            <p class="arrowdown"><a title="Poursuivre la lecture" href="#start"><i class="fa-arrow-down"></a></p>
 
           </div><!-- fin site heading-->
         </div><!-- fin col-->
@@ -100,99 +103,104 @@
         <h2 id="start" style="font-size: 32px;">Y a t-il un risque de pénurie d'eau potable sur mon territoire?</h2>
       </div>
     </div>
-    </br>
 
-    <!-- onglets pour les années -->
+    <!-- CONFIG CARTE 1-->
+      <div id="container">
+      <h1>A quel point va t-on manquer d'eau?</h1>
+      <div id="config">
+        <p>
+          <label>Dans la décennie:</label>
+          <select id="horizon">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+          </select>
+        </p>
+        <p>
+          <label>En:</label>
+          <select id="season">
+            <option value="spring">Printemps</option>
+            <option value="summer">Eté</option>
+            <option value="autumn">Automne</option>
+            <option value="winter">Hiver</option>
+          </select>
+        </p>
+        <div id="spinner">
+          <i class="fa fa-snowflake-o fa-spin"></i>
+        </div>
+      </div>
+      <div id="map_wrapper">
+        <div id="map"></div>
+        <div id="colorscale"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+    <script src="{{ '/assets/water_scarcity/sswi.js' | relative_url }}"></script>
+    <script src="{{ '/assets/water_scarcity/main.js' | relative_url }}"></script>
+ 
+    <!-- CONFIG CARTE 2-->
+
     <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <ul class="nav nav-pills">
-        <li class="nav-item">
-
-            <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab" data-toggle="tab" href="#carte2030" role="tab" aria-controls="carte2030"
-               aria-selected="true">2030</a>
+      <!-- HORIZON TEMPOREL-->
+      <div class="col-lg-6 col-md-6">
+        <ul id="horizon" class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab" data-horizon="H1">2030 / 2040</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab" data-toggle="tab" href="#carte2050" role="tab" aria-controls="carte2050"
-               aria-selected="true">2050</a>
+            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab" data-horizon="H2">2050 / 2060</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab" data-toggle="tab" href="#carte2080" role="tab" aria-controls="carte2070"
-               aria-selected="true">2080</a>
+            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab" data-horizon="H3">2080 / 2090</a>
           </li>
         </ul>
       </div>
-    </div>
 
-    <!-- onglets pour les saisons
-    <div class="row">
-      <div class="col-lg-4 col-md-4">
-
-        <select class="custom-select" id="inputGroupSelect01">
-          <option selected value="1">Printemps</option>
-          <option value="2">Eté</option>
-          <option value="3">Automne</option>
-          <option value="3">Hiver</option>
+      
+      
+      <!-- SAISONS-->
+      <div class="d-flex align-items-center col-lg-6 col-md-6" style="padding-top: 8px;" id="saison-conteneur">
+        <label>Saison&nbsp;:</label>
+        <select class="custom-select" id="saisons" >
+          <option selected value="spring">Printemps</option>
+          <option value="summer">Eté</option>
+          <option value="autumn">Automne</option>
+          <option value="winter">Hiver</option>
         </select>
-
       </div>
-    </div> -->
+    </div>
 
-    <!-- Les cartes et la légende -->
-    <div class="row">
-      <div class="tab-content col-lg-8 col-md-8 ">
-        <div class="tab-pane fade show active" id="carte2030" role="tabpanel" aria-labelledby="carte2030-tab">
-          <img class="cartes" style="margin: 30px;" src="img/carte2030.png" width="669" height="688" border="0" usemap="#map" />
-
-          <map name="map">
-            <!-- #$-:Image map file created by GIMP Image Map plug-in -->
-            <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
-            <!-- #$-:Please do not edit lines starting with "#$" -->
-            <!-- #$VERSION:2.3 -->
-            <!-- #$AUTHOR:Fanny -->
-            <area shape="circle" coords="98,219,30" href="http://fbreuneval.github.io/zone-risque-relief-calcaire.html" />
-            <area shape="circle" coords="506,261,46"  nohref="nohref" />
-            <area shape="circle" coords="495,445,54" href="http://fbreuneval.github.io/zone-risque-relief-calcaire.html" />
-            <area shape="circle" coords="379,482,23" href="http://fbreuneval.github.io/zone-risque-relief-calcaire.html" />
-            <area shape="circle" coords="261,374,58" href="http://fbreuneval.github.io/zone-risque-relief-calcaire.html" />
-          </map>
-
-
-
-          <!--<img class="cartes" style="margin: 30px;" src="img/carte2030.png" alt="carte de France des niveaux de sécheresse à l'horizon proche"> -->
-        </div>
-        <div class="tab-pane fade" id="carte2050" role="tabpanel" aria-labelledby="carte2050-tab">
-          <img class="cartes" style="margin: 30px;" src="img/carte2050.png" alt="carte de France des niveaux de sécheresse à l'horizon moyen">
-        </div>
-        <div class="tab-pane fade" id="carte2080" role="tabpanel" aria-labelledby="carte2080-tab">
-          <img class="cartes" style="margin: 30px;" src="img/carte2080.png" alt="carte de France des niveaux de sécheresse à l'horizon lointain">
+      <div class="row">
+        <div id="carte-spinner" class="col-lg-12 col-md-12">
+          <i class="fas fa-spin fa-2x fa-spinner"></i>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-4">
-       <!-- <div class="card" >
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Légende</strong></li>
-            <li class="list-group-item">Plusieurs mois par an ...
-              <p><span style="color: #a9381c; background: #000000" alt="noir">___</span> Menace de pénurie en eau potable</p>
-              <p><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Situation de crise </p>
-              <p><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Etat d'alerte<p/>
-            </li>
-          </ul>
-        </div>-->
+    <!-- CARTE & LEGENDE -->
+    <div class="d-flex flex-wrap">
+      <div id="carte"><!-- Rempli par js/map.js --></div>
 
-       <!-- <p><strong>Plusieurs mois par an, en France, il y aura désormais des ...</strong></p>-->
-        <p><span style="color: #e08f17; background: #e08f17" alt="orange">___</span> Alerte : limitations des prélèvements pour toutes les activités</p>
-        <p><span style="color: #a9381c; background: #a9381c" alt="rouge">___</span> Crise : arrêt du droit de prélever l'eau (industrie, agriculture, jardinage...)</p>
-        <p><span style="color: #000000; background: #000000" alt="noir">___</span> Risque de pénuries en eau (dont potable)</p>
-        <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">"Zoom" sur les données scientifiques</button> </br>
-
-
-            <a  href="temoignages-penurie-eau-potable.html" class="btn btn-dark btn-lg "> Témoignages de pénuries d'eau potable en France</a>
-
+      <!-- LEGENDE -->
+      <div id="carte-legende"><!-- Rempli par js/map.js --></div>
     </div>
-      <p>Contrairement à certaines idées reçues, le changement climatique amplifiera les risques de pénurie d'eau potable dans des endroits "verts" comme le Jura ou la Bretagne (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
 
+    <div class="row" id="info-buttons">
+      <div class="col-lg-6 col-md-6">
+        <button class="btn btn-warning btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+          "Zoom" sur les données scientifiques
+        </button>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <a href="temoignages-penurie-eau-potable.html" class="btn btn-dark btn-lg ">
+          Témoignages de pénuries d'eau potable en France
+        </a>
+      </div>
     </div>
+
+    <p>Contrairement à certaines idées reçues, le changement climatique amplifiera les risques de pénurie d'eau potable dans des endroits "verts" comme le Jura ou la Bretagne (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
 
     <div class="row">
       <div class="col-lg-12 col-md-12 mx-auto">
@@ -288,22 +296,6 @@
             </br>
 
           </div>
-<!--
-    <div class="row">
-
-      <div class="col-lg-12 col-md-12 mx-auto">
-
-        <h2>Pourquoi le changement climatique peut créer des pénuries d'eau potable ? </h2>
-        <p>L'eau potable que nous consommons provient en majorité des réserves d'eau souterraines, qui sont de très bonne qualité. Elles sont remplies par l'eau de pluie ou de la fonte des glaces s'infiltrant dans le sol. Cependant, le changement climatique produit deux phénomènes :
-        <ul>
-          <li><strong>La hausse des tempétatures :</strong> l'eau s'évapore plus et en conséquence moins d'eau s'infiltre dans le sol.</li>
-          <li><strong>L'espacement des pluies :</strong>  de longues périodes sans pluie empêchent les réserves souterraines de se renouveller. Si vos réserves souterraines sont petites et/ou que l'eau ruisselle vers des altitudes plus basses, il y a un risque de pénurie d'eau potable.</li>
-        </ul>
-        </p>
-
-      </div>
-    </div>
-</br>-->
 
 
     <div class="row" style="background-color:#FCC11A;">
@@ -437,12 +429,16 @@
   </footer> -->
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/clean-blog.min.js"></script>
-
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/sswi.js"></script>
+  <script src="assets/js/map.js"></script>
   </div>
 </body>
 
