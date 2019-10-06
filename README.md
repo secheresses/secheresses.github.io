@@ -13,16 +13,13 @@ git clone git@github.com:fbreuneval/fbreuneval.github.io.git
 cd fbreuneval.github.io
 ```
 
-Installer [gulp](https://gulpjs.com/) et le lancer pour pré-traiter les fichiers :
+## Usage
 
-```
-gulp
-```
-
-Démarrer un serveur web basique. Par exemple:
+Démarrer un serveur web basique. Par exemple :
 
 ```
 python3 -m http.server 8000
 ```
 
-Puis consulter [http://0.0.0.0:8000/](http://0.0.0.0:8000/).
+Ouvrir le fichier `index.html` ne fonctionnera pas parce qu'il y a besoin de faire
+des requêtes HTTP pour la carte interactive. Il faut donc un serveur web.
