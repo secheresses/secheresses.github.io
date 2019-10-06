@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="267734dd-a792-4c86-8d66-225dbeb6b208" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="267734dd-a792-4c86-8d66-225dbeb6b208" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1213">
-              <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+            <state relative-caret-position="17">
+              <caret line="107" selection-start-line="107" selection-end-line="107" />
               <folding>
                 <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -99,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1236" />
@@ -133,7 +130,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fbreuneval.github.io-developpement" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -199,16 +196,17 @@
       <workItem from="1567948701562" duration="2531000" />
       <workItem from="1567951280050" duration="642000" />
       <workItem from="1568049895871" duration="37000" />
+      <workItem from="1570349165006" duration="66000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217534000" />
+    <option name="totallyTimeSpent" value="217600000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1218" height="735" extended-state="6" />
+    <frame x="-7" y="-7" width="1223" height="735" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15544042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15821153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -252,84 +250,32 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/methode.html" />
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/quote-right.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/arrow-alt-circle-down.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/angry.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/arrow-alt-circle-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/bell-slash.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/calendar-check.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/kiss.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/image.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/id-badge.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/hand-spock.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/object-group.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/smile-beam.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/user.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/user-circle.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/window-close.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/angle-double-up.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/angle-double-right.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/angle-double-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/angle-double-down.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-down.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-circle-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-circle-up.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-down.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/quote-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/quote-right.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/arrow-alt-circle-down.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/angry.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/arrow-alt-circle-left.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/bell-slash.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/calendar-check.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/kiss.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/image.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/id-badge.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/hand-spock.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/object-group.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/smile-beam.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/user.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/user-circle.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/regular/window-close.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/angle-double-up.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/angle-double-right.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/angle-double-left.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/angle-double-down.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-down.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-alt-circle-left.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-circle-left.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-circle-up.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-left.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/arrow-down.svg" />
+    <entry file="file://$PROJECT_DIR$/vendor/fontawesome-free/svgs/solid/quote-left.svg" />
     <entry file="file://$PROJECT_DIR$/scss/clean-blog.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -487,8 +433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1213">
-          <caret line="107" column="37" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
+        <state relative-caret-position="17">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
           <folding>
             <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
