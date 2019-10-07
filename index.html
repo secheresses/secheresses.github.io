@@ -8,7 +8,7 @@
   <meta name="description" content="Anticiper les pénuries d'eau potable">
   <meta name="author" content="Site d'information citoyenne permettant d'anticiper l'impact du changement climatique et des sécheresses sur l'accès à l'eau potable en France métropolitaine et en Outre mer. Nous identifions les zones à risques et mettons à disposition des ressources accessibles pour des publics non-scientifiques.">
 
-  <title>Pénuries d'eau potable</title>
+  <title>Sécheresses</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -33,7 +33,7 @@
   <!-- Navigation -->
   <nav class="navbar  navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Pénuries d'eau potable</a>
+      <a class="navbar-brand" href="index.html">Anticiper les sécheresses</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -79,14 +79,13 @@
       <div class="row">
         <div class="col-lg-10 col-md-10 mx-auto">
           <div style="padding-bottom: 35px; padding-top: 130px; " class="site-heading">
-            <h1>Pénuries d'eau potable</h1>
+            <h1>Sécheresses</h1>
             <!--<span class="subheading">A quels endroits de France allons nous manquer d'eau? </span>-->
             <hr class="my-4">
             <span><i class="fa fa-quote-left quote" aria-hidden="true"></i></span>
 
-            <span class="meta">Ces dernières années les canicules ont provoqué des pénuries d'eau potable pour plusieurs dizaines de milliers d'habitants de France métropolitaine. À partir de 2040 les situations qui étaient exceptionnelles deviendront la situation normale pour toute une partie du territoire français. Nous sommes un collectif citoyens et avons passé du temps avec des habitants, agriculteurs et maires qui ont vécu des pénuries d'eau potable et sont sur des zones qui manquent régulièrement d'eau <a style="color: white;" class="lien" href="temoignages-penurie-eau-potable.html" ><strong>(consultez leurs témoignages)</strong></a>. Le danger pour la population survient lorsque les conflits territoriaux mènent à des situations d'appropriation de l'eau au détriment des autres. C'est à nous/vous de faire le nécessaire pour que l'eau, qui sera un or bleu sur certains territoires, soit un bien commun.</span>
-            </br>
-            </br>
+            <span class="meta">Ce site existe pour celles et ceux qui préfèrent savoir à quel point nous allons manquer d’eau. Pour anticiper. Pour avoir le temps de décider quoi faire. À partir de 2050 les sécheresses exceptionnelles qui arrivaient auparavant une année sur trente se produiront désormais une année sur deux. Sur certains territoires tout ce qui consomme beaucoup d’eau va être contraint s’adapter. </span>
+              
             <p class="arrowdown">
 				<a title="Poursuivre la lecture" href="#start">
 					<i class="fa-arrow-down"></i>
@@ -104,7 +103,7 @@
 
     <div class="row">
       <div class="col-lg-12 col-md-12">
-        <h2 id="start" style="font-size: 32px;">Y a t-il un risque de pénurie d'eau potable sur mon territoire?</h2>
+        <h2 id="start" style="font-size: 32px;">À quel point va t-on manquer d'eau?</h2>
       </div>
     </div>
 
@@ -113,15 +112,16 @@
     <div class="row">
       <!-- HORIZON TEMPOREL-->
       <div class="col-lg-6 col-md-6">
+        <label>Une année classique en&nbsp;:</label>
         <ul id="horizon" class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab" data-horizon="H1">2030 / 2040</a>
+            <a class="nav-link active" style="font-size: 24px;" id="carte2030-tab" data-horizon="H1">2030-2040</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab" data-horizon="H2">2050 / 2060</a>
+            <a class="nav-link" style="font-size: 24px;" id="carte2050-tab" data-horizon="H2">2050-2060</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab" data-horizon="H3">2080 / 2090</a>
+            <a class="nav-link" style="font-size: 24px;" id="carte2080-tab" data-horizon="H3">2080-2090</a>
           </li>
         </ul>
       </div>
@@ -131,10 +131,10 @@
       <div class="d-flex align-items-center col-lg-6 col-md-6" style="padding-top: 8px;" id="saison-conteneur">
         <label>Saison&nbsp;:</label>
         <select class="custom-select" id="saisons" >
-          <option selected value="spring">Printemps</option>
-          <option value="summer">Eté</option>
-          <option value="autumn">Automne</option>
-          <option value="winter">Hiver</option>
+          <option selected value="spring">printemps</option>
+          <option value="summer">été</option>
+          <option value="autumn">automne</option>
+          <option value="winter">hiver</option>
         </select>
       </div>
     </div>
@@ -166,7 +166,7 @@
       </div>
     </div>
 
-    <p>Contrairement à certaines idées reçues, le changement climatique amplifiera les risques de pénurie d'eau potable dans des endroits "verts" comme le Jura ou la Bretagne (cf. <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">rapport du projet "Climsec" de Météo-France, p.10)</a>.</p>
+      <p><a a class="lien" href="qui-sommes-nous.html">Nous sommes un collectif de citoyens d’horizons différents</a> qui avons mené cette investigation. Nous avons pris la responsabilité de publier <a class="lien" href="temoignages-penurie-eau-potable.html" >secheresses.fr</a> pour que vous puissiez avoir la liberté de décider quoi faire. Sans être pris par surprise. Nous avons passé du temps avec des habitants qui vivent sur des territoires de métropole déjà touchés <a class="lien" href="temoignages-penurie-eau-potable.html" >(consultez leurs témoignages)</a>. Nous comptons sur vous pour faire le poids pour que l'eau, qui sera vu comme un or bleu sur certains territoires, devienne un bien commun.</p>
 
     <div class="row">
       <div class="col-lg-12 col-md-12 mx-auto">
@@ -185,15 +185,15 @@
 
 
 
-                <p>Nous avons indiqué en rouge et orange les régions où le changement climatique amplifiera les risques de manquer d'eau. Nous avons utilisé pour cela les données du projet Climsec produites par météoFrance.
+                <p>Nous avons indiqué en rouge et en orange les territoires impactés par le manque d’eau. Nous avons utilisé les données du laboratoire CLIMSEC (partenariat Météo-France, CERFACS et IPSL.) que nous remercions. 
                 <ul>
               </ul>
                 <p><a class="btn btn-warning" href="tutoriel-anticiper-changement-climatique.html">Anticiper le changement climatique</a></p>
 
- <p> Nous avons indiqué en noir les zones où les risques seront fortement amplifiés <strong>et</strong> où les roches souterraines ne permettent pas de stocker efficacement l'eau potable. Voici des schémas des phénomènes et les liens vers les données utilisées :
+                <p>Nous avons indiqué en noir les territoires touchés par le manque d’eau <strong>et</strong> où les roches souterraines ne permettent pas de constituer des réserves d’eau souterraines et ceci grâce aux données sur le sous-sol fourni par les acteurs de l’eau. Voici des schémas des phénomènes et les données :
 
-                                <p><a href="zone-risque-relief-calcaire.html" class="btn btn-dark">Régions à relief calcaire (Jura, Alpes, Pyrennées,...)</a></p>
-                                <p><a href="zone-risque-roches-granit.html" class="btn btn-dark">Régions à roches granitiques (Bretagne,...)</a></p>
+                                <p><a href="zone-risque-relief-calcaire.html" class="btn btn-dark">Régions à relief calcaire - apparaît sur la carte</a></p>
+                                <p><a href="zone-risque-roches-granit.html" class="btn btn-dark">Régions à roches socle - n'apparaît pas encore sur la carte</a></p>
 
 
 
@@ -225,13 +225,12 @@
 
 
 
-</br>
-
       <div class="row" style="background-color: #FCC11A">
         <div class="col-lg-12 col-md-12 mx-auto">
 
           </br>
-    <h2 style="color:black; font-size: 32px;"><img style="max-width: 70px; padding-right: 15px;">Quelles sont les zones à risques ? </h2></br>
+    <h2 style="color:black; font-size: 32px;"><img style="max-width: 70px; padding-right: 15px;">Y a t-il un risque de pénurie en eau potable en France métropolitaine?</h2>
+      <p>Oui. Et c'est déjà le cas. Voici les territoires à risque : </p>
 
         </div>
       </div>
@@ -240,9 +239,9 @@
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100" style="background-color: #ffffff">
       <div class="card-body">
-        <h5 class="card-title"><img style="max-width: 70px; padding-right: 15px;" src="assets/img/calcaire.png" alt="">Régions à relief calcaire (Jura, Alpes, Pyrennées,...) </h5></br>
+        <h5 class="card-title"><img style="max-width: 70px; padding-right: 15px;" src="assets/img/calcaire.png" alt="">Régions à relief calcaire (Alpes, Jura, Languedoc, etc.) </h5></br>
         <a href="zone-risque-relief-calcaire.html" class="btn btn-dark">Suis-je dans cette zone ? </a>
-        <p class="card-text" style="font-size: smaller;">Des pénuries ont déjà eu lieu dans ce type de région. En 2017, 10% des communes du Haut-Doubs ont eu le robinet coupé plusieurs heures par jour et durant 3 mois !</p>
+        <p class="card-text" style="font-size: smaller;"><strong>Apparaît sur la carte en noir</strong>. Des pénuries ont déjà eu lieu dans ces zones. En 2018 par exemple, 10% des communes du Doubs (un des départements les plus pluvieux de France) ont traversé des pénuries d'eau potable sur plusieurs mois.</p>
       </div>
     </div>
   </div>
@@ -250,10 +249,9 @@
   <div class="col-lg-4 col-md-6 mb-4">
     <div class="card h-100"  style="background-color: #ffffff">
       <div class="card-body">
-        <h5 class="card-title"><img style="max-width: 90px; padding-right: 15px;" src="assets/img/granit.png" alt="">Régions à roches granitiques (Bretagne,...)</h5></br>
-        <a href="" class="btn btn-dark">Prendre part à notre investigation</a>
-
-        <p class="card-text" style="font-size: smaller;">La Bretagne souffre déjà de pollution de l'eau, et risque de souffrir de pénurie d'eau potable. Explorez avec nous les conséquences du changement climatique dans ces régions.</p>
+        <h5 class="card-title"><img style="max-width: 90px; padding-right: 15px;" src="assets/img/granit.png" alt="">Régions à roches socle (Bretagne, Cantal, Corse...)</h5></br>
+        <a href="" class="btn btn-dark">Suis-je dans cette zone ?</a>
+        <p class="card-text" style="font-size: smaller;"><strong>N'aparaît pas encore sur la carte - en cours</strong>. Une grande partie du territoire Français est composé par des roches socles. Découvrez le tutoriel pour anticiper les zones à risques.</p>
       </div>
     </div>
 
@@ -279,8 +277,11 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title"> "En France, on ne manque pas d'eau!"</h4>
-            <p class="card-text">Et vous ne manquez pas d’air ;-) Le département du Haut-Doubs a subit une pénurie d’eau potable durant l'été et l'automne dernier. Les robinets de 10 % des communes étaient à sec pendant plusieurs heures de la journée, et le ravitaillement se faisait par camions-citernes. <a class="lien" href="temoignages-penurie-eau-potable.html">Retrouvez ici quelques exemples de pénuries récentes.</a> En métropole et dans les outre-mer, les restrictions d’usage de l’eau potable sont très fréquentes. Vous pouvez les consulter en temps réel sur le site <a class="lien" href="http://propluvia.developpement-durable.gouv.fr/propluvia/faces/index.jsp" >Propluvia.</a></p>
+            <h4 class="card-title"> "En France, on ne manque pas d'eau."</h4>
+              <p class="card-text">
+              <p>Et vous ne manquez pas d’air!</p>
+              <p>Ce n'est pas l'avis des "quelques" dizaines de milliers de citoyens qui ont traversé plusieurs mois de rupture d’alimentation en eau potable en métropole ces dernières années. Ou des centaines de milliers d’agriculteurs, sylviculteurs, qui n’ont plus eu le droit d’utiliser l’eau en dehors de quotas d’eau de secours. Si tant est qu’il reste des réserves de secours.</p>
+              <p>Retrouvez <a class="lien" href="temoignages-penurie-eau-potable.html">ici quelques exemples de pénuries récentes</a>. Pour les sécheresses il suffit d’allumer la TV, d’écouter la radio ou de sortir. Vous pouvez aussi consulter les restrictions de l’eau en temps réel sur le site <a class="lien" href="http://propluvia.developpement-durable.gouv.fr/propluvia/faces/index.jsp" >Propluvia</a>.</p>
           </div>
         </div>
       </div>
@@ -288,8 +289,10 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title">"Les risques sont seulement liés à la pollution."</h4>
-            <p class="card-text">La pollution de l’eau est un problème important dans certaines régions comme en Bretagne, et peut conduire à des pénuries d'eau potable. Cependant, la hausse des températures et l'espacement des précipitations peut aussi conduire à un manque d'eau. Les pénuries de 2018 dans le Haut-Doubs ou celle de Valenciennes en 2019 étaient liées à un manque d'eau et non à une pollution. <a class="lien" href="temoignages-penurie-eau-potable.html">Consultez les témoignages.</a></p>
+            <h4 class="card-title">"C’est dans les territoires du sud que le changement climatique va avoir le plus d’impact."</h4>
+            <p class="card-text">
+              <p>Ce ne sont pas les territoires déjà les plus habitués aux sécheresses qui vont être le plus impactés par le manque d’eau. C’est ceux qui y sont le moins habitués.</p>
+              <p>Par exemple: les territoires verdoyants habitués aux précipitations très régulières tout au long de l’année. Beaucoup d’éléments naturels (des variétés d’arbres, etc.) ou d’activités humaines (activités agricoles, etc.) n’y ont jamais encore été confrontés de manière aussi fréquente et intense.<a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">(source : rapport final du projet Climsec, voir p.10).</a></p>
           </div>
         </div>
       </div>
@@ -297,23 +300,10 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title">"1 ou 2 degrés de plus en moyenne, çe ne va pas changer grand-chose !"</h4>
-            <p class="card-text">Cela a de nombreuses conséquences :
-            <ul>
-              <li>Les périodes sans pluie s'allongent, ce qui augmente le risque qu'une source se tarisse.</li>
-              <li>L'évaporation de l'eau potable est plus intense.</li>
-              <li>Les besoins en eau de la végétation augmentent.</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card h-100">
-          <div class="card-body">
-            <h4 class="card-title"> "Quelques journées où il pleut beaucoup suffisent."</h4>
-            <p class="card-text">Oui si le sous-sol permet naturellement de conserver l’eau de pluie sur place. Sinon, l’eau  s’écoule vers des altitudes plus basses. C'est ce qui s'est passé dans le Haut-Doubs. Ce risque existe aussi dans d'autres régions, notamment là où il y a <a class="lien" href="zone-risque-relief-calcaire.html">du relief et des roches calcaires. Ce risque existe t-il près de chez vous ?</a></p>
+            <h4 class="card-title">"Il y a déjà eu des grandes sécheresses dans le passé."</h4>
+              <p>Oui, et donc ?</p>
+              <p>Ce qui arrivait une fois tous les trente ans (comme la sécheresse de 1976) se produira à partir de 2050-2060 une année sur deux. Vous avez sûrement remarqué que les sécheresses exceptionnelles étaient de plus en plus régulières ?</p>
+              <p>Tout ce qui est nouveau nous semble exceptionnel. Jusqu’à ce que cela devienne régulier. Puis que ça nous semble normal.</p>
           </div>
         </div>
       </div>
@@ -323,7 +313,9 @@
         <div class="card h-100">
           <div class="card-body">
             <h4 class="card-title"> "Les pénuries sont de toute façon très localisées."</h4>
-            <p class="card-text">Nous n'en sommes pas au point d'un risque généralisé de pénurie... et heureusement ! Mais même si vous n’avez pas de problème d’accès à l’eau potable, vos communes ou régions voisines peuvent en avoir. Vous serez les mieux placés pour leur apporter de l’aide. </p>
+            <p class="card-text">
+              <p>L’interdiction d’utiliser l’eau (agriculture, industries, jardinage, …) concerne déjà plus de la moitié de toutes les communes du territoire français. Toute une partie de l’année. C’est une forme de pénurie même s’il y a encore de l’eau au robinet.</p>
+              <p>Si vous parlez de pénuries d’eau potable (l’eau du robinet) cette situation concerne pour l’instant plusieurs dizaines de milliers d’habitants de métropole. Qui trouvent actuellement des solutions temporaires telles des ravitaillements par camion citerne ou des branchements. </p>
           </div>
         </div>
       </div>
@@ -331,8 +323,30 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card h-100">
           <div class="card-body">
-            <h4 class="card-title"> "Les zones à risque sont les régions où la végétation est sèche."</h4>
-            <p class="card-text">Prenez le Limousin ou le Jura. Ces régions très vertes ont régulièrement des réserves d’eau potable très faibles par rapport à leurs besoins. Avec le changement climatique, ce sont même les régions les plus humides (nord et nord-est) qui connaîtront les évolutions les plus importantes <a class="lien" href="http://www.drias-climat.fr/public/shared/rapport_final_CLIMSEC.pdf">(source : rapport final du projet Climsec, voir p.10)</a>.</p>
+            <h4 class="card-title"> "Quelques journées où il pleut beaucoup suffisent."</h4>
+            <p class="card-text">
+              <p>Non. Cela ne va pas obligatoirement recharger les nappes phréatiques (eaux souterraines). Par exemple:</p>
+              <ul>
+                  <li>S’il n’a pas plu depuis longtemps les plantes ont soif et vont boire une partie de l’eau (un frêne boit 300L/jour en situation normale, 500L/jour s'il manque d'eau).</li>
+                  <li>Le sol et l’air, s’ils sont chauds, vont accélérer l'évaporation de l'eau. Qui retourne dans l'air.</li>
+                  <li>S’ajoute à cela qu’avec l’augmentation des températures les pluies vont devenir de plus en plus intenses (environ 40 % max d’infiltration dans le sol). Autrement dit elles ne seront plus aussi régulières (environ 80 % d’infiltration dans le sol), et lorsque ça va tombe une partie va ruisseler.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h4 class="card-title"> "2 ou 3 degrés de plus en moyenne, ça ne va pas changer grand-chose."</h4>
+            <p class="card-text">
+              <p>Avec 2 ou 3 degrés en plus, il y a à minima</p>
+            <ul>
+                <li>Des sécheresses auxquelles toute une partie des écosystèmes (forêts, rivières, ...) n’est pas habituée et en mesure de s’adapter</li>
+                <li>De moins en moins d’eaux souterraines. Si tant est qu’il y a des eaux souterraines sur votre territoire et à ce moment nous sommes face à d’autres problèmes. Voir zones à risques.</li>
+                <li>Tout ce qui consomme beaucoup d’eau va être contraint de s’adapter, de certaines cultures céréalières aux forêts de conifères en passant par vos usages quotidiens de l’eau.</li>
+                <li>Et avec tout cela va s’accompagner de nombreuses réactions humaines en chaîne.</li>
+              </ul>
           </div>
         </div>
       </div>
