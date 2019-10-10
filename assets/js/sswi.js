@@ -58,8 +58,8 @@ var SSWI = function(mapId, colorscale, spinnerId, rootUrl, colorscaleId, default
   function showSpinner(show) {
     if (show === undefined) show = true;
     var spinner = document.getElementById(spinnerId);
-    if (show) spinner.style.visibility = "visible";
-    else spinner.style.visibility = "hidden";
+    if (show) spinner.removeAttribute('hidden');
+    else spinner.setAttribute("hidden", true);
   }
 
   function onEachFeature(feature, layer) {

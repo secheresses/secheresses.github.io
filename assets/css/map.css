@@ -8,9 +8,19 @@
   margin-right: 10px;
 }
 
-#carte-spinner {
-  text-align: center;
+#carte-container {
+  position: relative;
   margin: 20px 0;
+}
+
+#carte-spinner {
+	text-align: center;
+	padding: 20px 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: rgba(255, 255, 255, .65);
+	z-index: 9999;
 }
 
 #carte {
