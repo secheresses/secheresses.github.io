@@ -64,6 +64,14 @@ img::-moz-selection {
   color: #fff;
   background: transparent;
 }
+
+.fas.fa-ban {
+  color: #cb2431;
+}
+.fas.fa-check-circle {
+  color: #009500;
+}
+
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
