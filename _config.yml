@@ -1,0 +1,22 @@
+lang: fr
+title: "Sécheresses : ne pas être pris par surprise"
+description: "Site d'information et d'investigation citoyen sur les manques d'eau futurs pour tout le territoire français."
+logo: /assets/img/logo.png
+image: /assets/img/lac.jpg
+twitter:
+  card: summary_large_image
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: ":categories/:slug/"
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
