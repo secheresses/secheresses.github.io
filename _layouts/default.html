@@ -16,9 +16,25 @@
     {% seo %}
   </head>
 
-  <body class="{{ page.id }}-page">
+  <body id="{{ page.id }}-page">
     {% include nav.html %}
-    {{ content }}
+    <header class="masthead" style="background-image: url('{{ page.header.background | default: "/assets/img/header_background.png" }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-md-10 mx-auto">
+            <div style="padding-bottom: 35px; padding-top: 130px; " class="site-heading">
+              <h1>{{ page.header.title | default: page.title }}</h1>
+              {{ page.header.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      {{ content }}
+    </section>
     {% include footer.html %}
 
     <!-- JavaScript -->

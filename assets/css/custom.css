@@ -239,6 +239,11 @@ header.masthead .post-heading .meta {
 header.masthead .post-heading .meta a {
   color: #fff;
 }
+
+header.masthead h1 {
+  margin-bottom: 40px;
+}
+
 @media only screen and (min-width: 768px) {
   header.masthead .post-heading h1 {
     font-size: 55px;
@@ -575,4 +580,13 @@ li .zones-btn {
 .nb-interview {
   font-size: 28px;
   font-weight: bold;
+}
+
+#qui-sommes-nous-page h2 {
+  margin-top: 60px;
+}
+
+#qui-sommes-nous-page h4 {
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
