@@ -239,6 +239,11 @@ header.masthead .post-heading .meta {
 header.masthead .post-heading .meta a {
   color: #fff;
 }
+
+header.masthead h1 {
+  margin-bottom: 40px;
+}
+
 @media only screen and (min-width: 768px) {
   header.masthead .post-heading h1 {
     font-size: 55px;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Fonts -->
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/base.css" rel="stylesheet">
+
+    {{ page.css }}
+
+    {% seo %}
+  </head>
+
+  <body id="{{ page.id }}-page">
+    {% include nav.html %}
+    <header class="masthead" style="background-image: url('{{ page.header.background | default: "/assets/img/header_background.png" }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-md-10 mx-auto">
+            <div style="padding-bottom: 35px; padding-top: 130px; " class="site-heading">
+              <h1>{{ page.header.title | default: page.title }}</h1>
+              {{ page.header.content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      {{ content }}
+    </section>
+    {% include footer.html %}
+
+    <!-- JavaScript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/81f57a53b6.js" crossorigin="anonymous"></script>
+
+    <script src="assets/js/base.js"></script>
+
+    {{ page.js }}
+  </body>
+</html>
