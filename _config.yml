@@ -6,16 +6,18 @@ image: /assets/img/capture-printemps-2050.png
 twitter:
   card: summary_large_image
 
+plugins:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+
+whitelist:
+  - jekyll-redirect-from
+
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ":categories/:slug/"
   - scope:
       path: "assets/img"
     values:
